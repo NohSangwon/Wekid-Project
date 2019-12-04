@@ -1,0 +1,44 @@
+{
+  "project_info": {
+    "project_number": "888062701573",
+    "firebase_url": "https://wekidchat.firebaseio.com",
+    "project_id": "wekidchat",
+    "storage_bucket": "wekidchat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:888062701573:android:3154e8155227f30c",
+        "android_client_info": {
+          "package_name": "com.example.wekid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "888062701573-ap9pl7o2big8tbma72f847ft198ur1dm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.wekid",
+            "certificate_hash": "f49d69b4890782fa4474ca7bd22b02327912076f"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnZaG6X67mBdfJ93xkYrSc0xwSPj-x7mc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "888062701573-g41lb5bfugv7c8becdr8lihtguuo3gbe.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEA8"
+    tools:context=".KinderActivity">
+
+    <TextView
+        android:id="@+id/logoTxt"
+        android:layout_width="264dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="61dp"
+        android:layout_marginEnd="115dp"
+        android:layout_marginBottom="555dp"
+        android:text="유치원조회"
+        android:textColor="#000000"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.12" />
+
+    <EditText
+        android:id="@+id/inputSearch"
+        android:layout_width="278dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:hint="검색할 유치원 이름 입력 ex)하늘유치원"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/searchBtn"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <ListView
+        android:id="@+id/kinderListView"
+        android:layout_width="352dp"
+        android:layout_height="297dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="29dp"
+        android:listSelector="@android:color/holo_orange_light"
+        android:visibility="invisible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputSearch" />
+
+    <ImageButton
+    android:id="@+id/searchBtn"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.918"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.202"
+    app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <Button
+        android:id="@+id/okBtn"
+        android:layout_width="80dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="420dp"
+        android:layout_marginEnd="128dp"
+        android:layout_marginBottom="128dp"
+        android:visibility="invisible"
+        android:enabled="false"
+        android:text="선택"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</android.support.constraint.ConstraintLayout>

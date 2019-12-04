@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFEEA8"
+    tools:context=".ParentsHomeActivity">
+
+    <TextView
+        android:id="@+id/kinderName"
+        android:layout_width="52dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="75dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginBottom="541dp"
+        android:text='"      "'
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/kinderTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="207dp"
+        android:layout_marginBottom="539dp"
+        android:text="유치원"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/parentsTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="249dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginBottom="474dp"
+        android:text="학부모님"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/postBtn"
+        android:layout_width="127dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="131dp"
+        android:layout_marginEnd="62dp"
+        android:layout_marginBottom="296dp"
+        android:text="게시판"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/busBtn"
+        app:layout_constraintTop_toBottomOf="@+id/parentsTxt" />
+
+    <TextView
+        android:id="@+id/className"
+        android:layout_width="49dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="242dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="541dp"
+        android:text='"      "'
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/classTxt"
+        android:layout_width="28dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="315dp"
+        android:layout_marginTop="114dp"
+        android:layout_marginEnd="68dp"
+        android:layout_marginBottom="541dp"
+        android:text="반"
+        android:textSize="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <Button
+        android:id="@+id/updateBtn"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="220dp"
+        android:layout_marginBottom="100dp"
+        android:text="수정"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/deleteBtn"
+        android:layout_width="55dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="300dp"
+        android:layout_marginBottom="100dp"
+        android:text="탈퇴"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.278"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+
+    <Button
+        android:id="@+id/logoutBtn"
+        android:layout_width="90dp"
+        android:layout_height="42dp"
+        android:layout_marginBottom="100dp"
+        android:text="로그이웃"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.045" />
+    <Spinner
+        android:id="@+id/kidsNameList"
+        android:layout_width="139dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="84dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="474dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="272dp"
+        android:layout_marginBottom="537dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="80dp"
+        android:layout_height="2dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="223dp"
+        android:layout_marginTop="140dp"
+        android:layout_marginEnd="108dp"
+        android:layout_marginBottom="535dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+</android.support.constraint.ConstraintLayout>

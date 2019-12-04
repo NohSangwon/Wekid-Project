@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:id="@+id/tv_post_title"
+        android:textSize="16sp"
+        android:maxLines="1"
+        android:background="@drawable/edittext_border"
+        android:layout_margin="5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:gravity="center"
+        android:orientation="vertical">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:id="@+id/sp_types">
+
+        </Spinner>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll_info"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_user"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.2"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:id="@+id/tv_post_user"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_time"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:id="@+id/tv_post_date"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:adjustViewBounds="true"
+                android:src="@drawable/ic_calendar"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.1"
+                android:layout_gravity="center_vertical"
+                android:textSize="16sp"
+                android:id="@+id/tv_post_hit_count"/>
+        </LinearLayout>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tv_post_texts"
+            android:gravity="top|left"
+            android:layout_weight="1"
+            android:background="@drawable/edittext_border"
+            android:textSize="13sp"/>
+
+        <LinearLayout
+            android:layout_width="389dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_add_file"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:text="파일 추가"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/tv_file_name"
+                android:layout_width="207dp"
+                android:layout_height="38dp"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textColor="@color/colorAccent"
+                android:textSize="13sp" />
+
+            <Button
+                android:id="@+id/btn_delete_file"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:background="@drawable/ic_delete1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="등록"
+            android:textSize="13sp"
+            android:id="@+id/btn_add_post"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="수정"
+            android:textSize="13sp"
+            android:id="@+id/btn_update_post"/>
+
+        <Button
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:text="삭제"
+            android:textSize="13sp"
+            android:id="@+id/btn_delete_post"/>
+    </LinearLayout>
+
+</LinearLayout>
